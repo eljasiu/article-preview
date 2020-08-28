@@ -38,29 +38,6 @@
     </div>
   </div>
 
-<script>
-  const shareBtn = document.querySelector('.share');
-  const socialsIcons = document.querySelector('.socials');
-
-  function show(){
-    if(socialsIcons.classList.contains('active')) return;
-    socialsIcons.classList.add('active');
-
-    socialsIcons.style.opacity = '0';
-    window.setTimeout(function() {
-      socialsIcons.style.opacity = '1';
-    }, 50)
-  }
-
-  shareBtn.addEventListener('mousemove', show);
-  shareBtn.addEventListener('click', show);
-
-  window.addEventListener('click', (e) => {
-    if(e.target !== shareBtn && e.target !== socialsIcons && e.target !== (document.querySelector('.share img')) && e.target !== (document.querySelector('.socials span'))){
-      socialsIcons.classList.remove('active')
-    }
-  });
-
-</script>
+<script src="app.js"></script>
 </body>
 </html>
