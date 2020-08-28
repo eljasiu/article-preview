@@ -18,7 +18,8 @@ function hide(e){
 }
 
 shareBtn.addEventListener('mousemove', show);
-shareBtn.addEventListener('click', show);
-
 window.addEventListener('click', hide);
-document.addEventListener('touchstart', hide); //<-- for iOS devices
+
+//for iOS devices:
+shareBtn.addEventListener('touchstart', show);
+document.addEventListener('touchstart', hide);
