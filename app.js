@@ -21,3 +21,4 @@ shareBtn.addEventListener('mousemove', show);
 shareBtn.addEventListener('click', show);
 
 window.addEventListener('click', hide);
+document.addEventListener('touchstart', hide); //<-- for iOS devices
